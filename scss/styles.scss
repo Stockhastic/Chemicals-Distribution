@@ -1,0 +1,259 @@
+@import "_vars.scss";
+
+// Use three formats in order to maximise support for older browsers. 
+// TTF for old browsers, WOFF & WOFF 2 for new one
+@font-face {
+    font-family: 'Jost-Regular';
+    src: url(/media/fonts/Jost/ttf/Jost-Regular.ttf) format('truetype'),
+    url(/media/fonts/Jost/woff/Jost-Regular.woff) format('woff'),
+    url(/media/fonts/Jost/woff/Jost-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Jost-Medium';
+    src: url(/media/fonts/Jost/ttf/Jost-Medium.ttf) format('truetype'),
+    url(/media/fonts/Jost/woff/Jost-Medium.woff) format('woff'),
+    url(/media/fonts/Jost/woff/Jost-Medium.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Jost-SemiBold';
+    src: url(/media/fonts/Jost/ttf/Jost-SemiBold.ttf) format('truetype')
+    url(/media//fonts/Jost/woff/Jost-SemiBold.woff) format('woff'),
+    url(/media/fonts/Jost/woff/Jost-SemiBold.woff2) format('woff2');
+}
+@font-face {
+    font-family: 'Jost-Light';
+    src: url(/media/fonts/Jost/ttf/Jost-Light.ttf) format('truetype')
+    url(/media/fonts/Jost/woff/Jost-Light.woff) format('woff'),
+    url(/media/fonts/Jost/woff/Jost-Light.woff2) format('woff2');
+}
+
+//RESET STYLES
+* {
+	padding: 0;
+	margin: 0;
+	border: none;
+    font-size: 10px;
+}
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+a:hover  {
+    text-decoration: none;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+// FONT STYLES AND SPANS
+h1 {
+    font-size: $header1Size;
+    color: $header1Color;
+    font-family: "Jost-SemiBold", "Arial", "Helvetica", "sans-serif";
+}
+h2 {
+    font-size: $header2Size;
+    color: $header2Color;
+    font-family: "Jost-Medium", "Arial", "Helvetica", "sans-serif";
+}
+h3 {
+    font-size: $header3Size;
+    font-family: "Jost-Light", "Arial", "Helvetica", "sans-serif";
+}
+h4 {
+    font-size: $header4Size;
+    font-family: "Jost-Regular", "Arial", "Helvetica", "sans-serif";
+}
+p {
+    font-size: $paragraphSize;
+    font-family: "Jost-Regular", "Arial", "Helvetica", "sans-serif";
+}
+.accentColor {
+    color: $accentColor;
+    font-family: "Jost-SemiBold", "Arial", "Helvetica", "sans-serif";
+}
+
+// MAIN CODE
+strong {
+    font-size: $paragraphSize;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #000;
+}
+
+.btn {
+    font-size: 2rem;
+    font-family: "jost-Medium";
+    padding: 1rem 2rem;
+}
+
+.btn_light {
+    background: linear-gradient(
+        90deg,
+        $mainColor,
+        $secondColor
+    );
+    background-clip: text;
+    color: transparent;
+
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    // align-content: center;
+}
+
+header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $wrapperWidth;
+    height: $headerHeight;
+    margin-bottom: 11rem;
+}
+
+.header {
+    &__logo {
+        padding: 15px 30px;
+        background: linear-gradient(
+            0deg,
+            $mainColor,
+            $secondColor
+        ) ;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        height: $headerHeight;
+
+        & > li {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__link {
+        color: #000;
+        font-size: $headerNavLinkSize;
+        font-family: "Jost-Regular";
+        margin-right: 4.5rem;
+        margin-left: 1.5rem;
+    }
+
+    &__langSwitcher{
+        display: flex;
+        width: 60px;
+        height: 30px;
+    }
+}
+
+.contactsLink {
+    background: linear-gradient(
+        0deg,
+        $mainColor,
+        $secondColor
+    );
+
+    padding: 1rem 4rem;
+    color: #fff;
+    margin-left: 0;
+}
+
+.phoneLink {
+    font-size: $headerPhoneLinkSize;
+    font-family: "Jost-Medium";
+    color: $mainColor;
+
+    &::before {
+        display: inline-block;
+        translate: -5px 25%;
+        content: url(/media/graphics/png/navLinkPhone.png);
+    }
+}
+
+.langSwitcher{
+
+    &__flag {
+        margin-right: 1rem;
+    }
+
+    &__btn {
+        background-color: #fff;
+        display:flex;
+        align-items: center;
+        cursor: pointer;    
+    }
+
+
+
+    &__languageMenu {
+        display: none;
+        padding: 1.5rem 2rem;
+        // background-color: aquamarine;
+        border: 2px solid $secondColor;
+        border-radius: 20px;
+        position: absolute;
+        translate: -66% 30%;
+        text-align: end;
+        min-width: 140px;
+    }
+
+    &__languageLink {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__languageLink > a {
+        font-family: "Jost-Medium";
+        font-size: $header3Size;
+        color: $secondColor;
+    }
+    &__languageLink > img {
+        width: 3rem;
+        height : 3rem;
+        margin-right: 1rem;
+    }
+
+    // &__btn{
+
+    // }
+
+    // &__icon {
+
+    // }
+
+}
+
+main {
+    width: $wrapperWidth;
+}
+
+.industrialEquipment {
+    display: flex;
+    // flex-wrap: wrap;
+    margin-top: 6rem;
+
+    &__description {
+        margin-left: 62px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        & > h2 {
+            max-height: 45px;
+        }
+    
+        & > p {
+            max-width: 770px;
+            margin: 1.5rem 0;
+        }
+    }
+}
