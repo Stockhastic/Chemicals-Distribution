@@ -1,4 +1,5 @@
 @import "_vars.scss";
+@import "_mixins.scss";
 
 // Use three formats in order to maximise support for older browsers. 
 // TTF for old browsers, WOFF & WOFF 2 for new one
@@ -75,6 +76,10 @@ p {
 }
 
 // MAIN CODE
+.divider{
+    height: $dividerHeight;
+}
+
 strong {
     font-size: $paragraphSize;
 }
@@ -87,27 +92,28 @@ body {
 }
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 2rem;
     font-family: "jost-Medium";
     padding: 1rem 2rem;
+    
 }
 
 .btn_light {
-    background: linear-gradient(
-        90deg,
-        $mainColor,
-        $secondColor
-    );
-    background-clip: text;
+    @include gradient(90deg, $mainColor, $secondColor);
+    border: 2px solid $mainColor;
+    position: relative;
+    background-clip: text; 
     color: transparent;
-
-
+    width: 330px;
+    height: 40px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    // align-content: center;
 }
 
 header  {
@@ -122,11 +128,7 @@ header  {
 .header {
     &__logo {
         padding: 15px 30px;
-        background: linear-gradient(
-            0deg,
-            $mainColor,
-            $secondColor
-        ) ;
+        @include gradient(0deg, $mainColor, $secondColor);
     }
 
     &__navigation {
@@ -197,7 +199,6 @@ header  {
     &__languageMenu {
         display: none;
         padding: 1.5rem 2rem;
-        // background-color: aquamarine;
         border: 2px solid $secondColor;
         border-radius: 20px;
         position: absolute;
@@ -249,11 +250,164 @@ main {
     
         & > h2 {
             max-height: 45px;
+            font-weight: 400;
         }
     
         & > p {
             max-width: 770px;
             margin: 1.5rem 0;
+        }
+    }
+}
+
+.advantagesCards {
+    // outline: 2px red solid;
+    height: 390px;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    color: #fff;
+
+    &__quality {
+        translate: 2% 0;
+        width: 570px;
+        height: 214px;
+    }
+
+    &__service {
+        position: absolute;
+        translate: -94% 35%;
+    }
+
+    &__reliability {
+        position: absolute;
+        translate: -161% 80%;
+    }
+}
+
+.solutions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        width: 100%;
+        min-width: none;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    &__cloud{
+        position: relative;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        min-width:600px;
+        width: 600px;
+        height: 300px; 
+    }
+
+    &__food{
+        position: relative;
+        translate: 25%;
+        width: 374px;
+        // height: 34px;
+        text-align: center;
+        padding: $cloudItemPadding 0;
+        border-radius: 20px 20px 0 0;
+    }
+    &__electroeq{
+        width: 382px;
+        padding: $cloudItemPadding 0;
+        border-radius: 20px 0 0 20px;
+    }
+    &__cosmetics{
+        width: 211px;
+        padding: $cloudItemPadding 0;
+        position: absolute;
+        translate: 184% -107%;
+        border-radius: 0 20px 0 0;
+    }
+    &__pharma{
+        width:301px;
+        padding: $cloudItemPadding 0;
+        border-radius: 0 0 0 20px;
+        translate: 47px 0;
+    }
+    &__bevereges{
+        position: absolute;
+        translate: 179% -107%;
+        width: 198px;
+        padding: $cloudItemPadding 0;
+        border-radius: 0 0 20px 0;
+    }
+    &__electronics{
+        width:293px;
+        padding: $cloudItemPadding 0;
+        border-radius: 0 0 20px 20px;
+        translate: 177px 0;
+    }
+
+    &__description {
+        margin-left: 100px;
+        width: 618px;
+        max-height: 175px;
+        font-weight: 100;
+    }
+}
+
+.cloud {
+    &_main{
+        transition: 0.3s;
+        background-color: $secondColor;
+        margin-bottom: 5px;
+        &:hover{
+            background-color: $accentColor;
+        }
+
+    }
+    &_dark{
+        transition: 0.3s;
+        background-color: $mainColor;
+        margin-bottom: 5px;
+        &:hover{
+            background-color: $accentColor;
+        }
+
+    }
+
+}
+
+.photocards{
+    display: flex;
+    justify-content: space-between;
+
+    &__title{
+        position: absolute;
+        color: #fff;
+        font-size: 3.6rem;
+        font-family: "Jost-Regular";
+        font-weight: 400;
+    }
+
+    &__cover {
+        filter: contrast(30%);
+    }
+
+    &__left{
+
+        width: 695px;
+        height: 335px;
+        & > h1 {
+            outline: 2px red solid;
+            translate: 15% -350%;
+        }
+    }
+    &__right{
+        width: 695px;
+        height: 335px;
+        & > h1 {
+            outline: 2px red solid;
+            translate: 3% -350%;
         }
     }
 }

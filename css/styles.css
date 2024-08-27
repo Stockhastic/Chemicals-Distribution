@@ -65,6 +65,10 @@ p {
   font-family: "Jost-SemiBold", "Arial", "Helvetica", "sans-serif";
 }
 
+.divider {
+  height: 100px;
+}
+
 strong {
   font-size: 2rem;
 }
@@ -77,6 +81,9 @@ body {
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2rem;
   font-family: "jost-Medium";
   padding: 1rem 2rem;
@@ -84,8 +91,12 @@ body {
 
 .btn_light {
   background: linear-gradient(90deg, #693095, #A05FD2);
+  border: 2px solid #693095;
+  position: relative;
   background-clip: text;
   color: transparent;
+  width: 330px;
+  height: 40px;
 }
 
 nav {
@@ -197,8 +208,145 @@ main {
 }
 .industrialEquipment__description > h2 {
   max-height: 45px;
+  font-weight: 400;
 }
 .industrialEquipment__description > p {
   max-width: 770px;
   margin: 1.5rem 0;
+}
+
+.advantagesCards {
+  height: 390px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  color: #fff;
+}
+.advantagesCards__quality {
+  translate: 2% 0;
+  width: 570px;
+  height: 214px;
+}
+.advantagesCards__service {
+  position: absolute;
+  translate: -94% 35%;
+}
+.advantagesCards__reliability {
+  position: absolute;
+  translate: -161% 80%;
+}
+
+.solutions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.solutions__title {
+  width: 100%;
+  min-width: none;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.solutions__cloud {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  min-width: 600px;
+  width: 600px;
+  height: 300px;
+}
+.solutions__food {
+  position: relative;
+  translate: 25%;
+  width: 374px;
+  text-align: center;
+  padding: 18px 0;
+  border-radius: 20px 20px 0 0;
+}
+.solutions__electroeq {
+  width: 382px;
+  padding: 18px 0;
+  border-radius: 20px 0 0 20px;
+}
+.solutions__cosmetics {
+  width: 211px;
+  padding: 18px 0;
+  position: absolute;
+  translate: 184% -107%;
+  border-radius: 0 20px 0 0;
+}
+.solutions__pharma {
+  width: 301px;
+  padding: 18px 0;
+  border-radius: 0 0 0 20px;
+  translate: 47px 0;
+}
+.solutions__bevereges {
+  position: absolute;
+  translate: 179% -107%;
+  width: 198px;
+  padding: 18px 0;
+  border-radius: 0 0 20px 0;
+}
+.solutions__electronics {
+  width: 293px;
+  padding: 18px 0;
+  border-radius: 0 0 20px 20px;
+  translate: 177px 0;
+}
+.solutions__description {
+  margin-left: 100px;
+  width: 618px;
+  max-height: 175px;
+  font-weight: 100;
+}
+
+.cloud_main {
+  transition: 0.3s;
+  background-color: #A05FD2;
+  margin-bottom: 5px;
+}
+.cloud_main:hover {
+  background-color: #FF9D42;
+}
+.cloud_dark {
+  transition: 0.3s;
+  background-color: #693095;
+  margin-bottom: 5px;
+}
+.cloud_dark:hover {
+  background-color: #FF9D42;
+}
+
+.photocards {
+  display: flex;
+  justify-content: space-between;
+}
+.photocards__title {
+  position: absolute;
+  color: #fff;
+  font-size: 3.6rem;
+  font-family: "Jost-Regular";
+  font-weight: 400;
+}
+.photocards__cover {
+  filter: contrast(30%);
+}
+.photocards__left {
+  width: 695px;
+  height: 335px;
+}
+.photocards__left > h1 {
+  outline: 2px red solid;
+  translate: 15% -350%;
+}
+.photocards__right {
+  width: 695px;
+  height: 335px;
+}
+.photocards__right > h1 {
+  outline: 2px red solid;
+  translate: 3% -350%;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,9 @@
+@mixin gradient($_deg, $_firstColor, $_secondColor) {
+    background: linear-gradient(
+        $_deg,
+        $_firstColor,
+        $_secondColor
+    );
+}
+
+// @mixin cloudItem($_padVer, $_padHor,)
