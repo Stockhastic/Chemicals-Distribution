@@ -91,12 +91,19 @@ body {
 
 .btn_light {
   background: linear-gradient(90deg, #693095, #A05FD2);
+  transition: 0.26s;
   border: 2px solid #693095;
   position: relative;
   background-clip: text;
   color: transparent;
   width: 330px;
   height: 40px;
+}
+.btn_light:hover {
+  transform: translateY(5px);
+  color: #fff;
+  background-clip: unset;
+  border: 2px solid #A05FD2;
 }
 
 nav {
@@ -125,8 +132,10 @@ header {
 .header__navigation > li {
   display: flex;
   align-items: center;
+  transition: 0.3s;
 }
 .header__link {
+  transition: 0.3s;
   color: #000;
   font-size: 28px;
   font-family: "Jost-Regular";
@@ -139,14 +148,28 @@ header {
   height: 30px;
 }
 
+.orangeHover:hover {
+  background-color: #FF9D42;
+}
+.orangeHover:hover > a {
+  color: #fff;
+  transform: translateX(10px);
+}
+
 .contactsLink {
   background: linear-gradient(0deg, #693095, #A05FD2);
   padding: 1rem 4rem;
   color: #fff;
   margin-left: 0;
+  font-family: "Jost-Regular";
+  font-weight: 400;
+}
+.contactsLink:hover {
+  transform: translateY(-5px);
 }
 
 .phoneLink {
+  transition: 0.2s;
   font-size: 20px;
   font-family: "Jost-Medium";
   color: #693095;
@@ -155,6 +178,10 @@ header {
   display: inline-block;
   translate: -5px 25%;
   content: url(/media/graphics/png/navLinkPhone.png);
+}
+.phoneLink:hover {
+  transform: translateY(5px);
+  text-shadow: 1px 1px 1px #A05FD2;
 }
 
 .langSwitcher__flag {
@@ -265,17 +292,28 @@ main {
   padding: 18px 0;
   border-radius: 20px 20px 0 0;
 }
+.solutions__food:hover {
+  translate: 35% 0;
+}
 .solutions__electroeq {
   width: 382px;
   padding: 18px 0;
   border-radius: 20px 0 0 20px;
 }
+.solutions__electroeq:hover {
+  translate: -5% 0;
+  width: 402px;
+}
 .solutions__cosmetics {
   width: 211px;
   padding: 18px 0;
   position: absolute;
-  translate: 184% -107%;
+  translate: 184% -107.5%;
   border-radius: 0 20px 0 0;
+}
+.solutions__cosmetics:hover {
+  translate: 200% -107.5%;
+  width: 194px;
 }
 .solutions__pharma {
   width: 301px;
@@ -283,18 +321,29 @@ main {
   border-radius: 0 0 0 20px;
   translate: 47px 0;
 }
+.solutions__pharma:hover {
+  translate: 89px 0;
+  width: 260px;
+}
 .solutions__bevereges {
   position: absolute;
-  translate: 179% -107%;
+  translate: 179% -107.5%;
   width: 198px;
   padding: 18px 0;
   border-radius: 0 0 20px 0;
+}
+.solutions__bevereges:hover {
+  width: 230px;
+  translate: 154% -107.5%;
 }
 .solutions__electronics {
   width: 293px;
   padding: 18px 0;
   border-radius: 0 0 20px 20px;
   translate: 177px 0;
+}
+.solutions__electronics:hover {
+  translate: 150px 0;
 }
 .solutions__description {
   margin-left: 100px;
@@ -332,14 +381,17 @@ main {
   font-weight: 400;
 }
 .photocards__cover {
-  filter: contrast(30%);
+  transition: 0.3s;
+  filter: brightness(0.4);
+}
+.photocards__cover:hover {
+  filter: brightness(0.8);
 }
 .photocards__left {
   width: 695px;
   height: 335px;
 }
 .photocards__left > h1 {
-  outline: 2px red solid;
   translate: 15% -350%;
 }
 .photocards__right {
@@ -347,6 +399,178 @@ main {
   height: 335px;
 }
 .photocards__right > h1 {
-  outline: 2px red solid;
   translate: 3% -350%;
+}
+
+.adresses {
+  display: flex;
+  justify-content: space-between;
+}
+.adresses__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 662px;
+}
+.adresses__map {
+  max-width: 695px;
+  border: 5px solid #693095;
+  border-radius: 5px;
+}
+.adresses__map > iframe {
+  border-radius: 5px;
+}
+.adresses__title {
+  font-weight: 400;
+  text-align: end;
+}
+.adresses__description {
+  text-align: end;
+  font-weight: 500;
+}
+
+.development {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.development__title {
+  color: #FF9D42;
+  text-align: end;
+  min-width: 662px;
+}
+.development__description {
+  width: 690px;
+  text-align: center;
+}
+.development__description > p {
+  margin: 1rem 0;
+}
+.development__span {
+  font-size: 22px;
+  font-weight: 900;
+  color: #FF9D42;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 10rem;
+  width: 100%;
+  height: 175px;
+  background: linear-gradient(90deg, #693095, #A05FD2);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 1460px;
+}
+.wrapper__left > h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.wrapper__left > h2 {
+  color: #fff;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+@media (max-width: 425px) {
+  header {
+    margin-bottom: 4.8rem;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 425px;
+  }
+  main > h1 {
+    text-align: center;
+    width: 600px;
+  }
+  .industrialEquipment {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .divider {
+    height: 4.8rem;
+  }
+  header {
+    margin-bottom: 4.8rem;
+  }
+  .header__logo {
+    width: 40%;
+    border-radius: 0 0 20px;
+  }
+  nav {
+    display: none;
+  }
+  main {
+    max-width: 992px;
+    min-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  main > h1 {
+    text-align: center;
+  }
+  .industrialEquipment {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .industrialEquipment__description {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0;
+  }
+  .industrialEquipment__description > a {
+    width: 70%;
+  }
+  .industrialEquipment > img {
+    width: 90%;
+    height: 90%;
+    margin-bottom: 1rem;
+  }
+  .advantagesCards {
+    display: flex;
+    flex-direction: column;
+    height: 770px;
+  }
+  .advantagesCards > img {
+    width: 80%;
+    position: relative;
+    translate: 0 0;
+  }
+  .solutions__cloud {
+    display: inline-block;
+  }
+  .photocards {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .photocards__left {
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

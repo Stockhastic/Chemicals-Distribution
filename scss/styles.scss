@@ -103,12 +103,19 @@ body {
 
 .btn_light {
     @include gradient(90deg, $mainColor, $secondColor);
+    transition: 0.26s;
     border: 2px solid $mainColor;
     position: relative;
     background-clip: text; 
     color: transparent;
     width: 330px;
     height: 40px;
+    &:hover{
+        transform: translateY(5px);
+        color: #fff;
+        background-clip:unset;
+        border: 2px solid $secondColor;
+    }
 }
 
 nav {
@@ -126,12 +133,14 @@ header  {
 }
 
 .header {
+    
     &__logo {
         padding: 15px 30px;
         @include gradient(0deg, $mainColor, $secondColor);
     }
 
     &__navigation {
+
         display: flex;
         align-items: center;
         height: $headerHeight;
@@ -139,10 +148,12 @@ header  {
         & > li {
             display: flex;
             align-items: center;
+            transition: $slowAnim;
         }
     }
 
     &__link {
+        transition: $slowAnim; 
         color: #000;
         font-size: $headerNavLinkSize;
         font-family: "Jost-Regular";
@@ -157,19 +168,31 @@ header  {
     }
 }
 
-.contactsLink {
-    background: linear-gradient(
-        0deg,
-        $mainColor,
-        $secondColor
-    );
+.orangeHover{
+    &:hover{
+        background-color: $accentColor;
+    }
+    &:hover > a{
+        color: #fff;
+        transform: translateX(10px);
+    }
 
+}
+
+.contactsLink {
+    @include gradient(0deg, $mainColor, $secondColor);
     padding: 1rem 4rem;
     color: #fff;
     margin-left: 0;
+    font-family: "Jost-Regular";
+    font-weight: 400;
+    &:hover{
+        transform: translateY(-5px);
+    }
 }
 
 .phoneLink {
+    transition: $fastAnim;
     font-size: $headerPhoneLinkSize;
     font-family: "Jost-Medium";
     color: $mainColor;
@@ -179,10 +202,15 @@ header  {
         translate: -5px 25%;
         content: url(/media/graphics/png/navLinkPhone.png);
     }
+
+    &:hover {
+        transform: translateY(5px);
+        text-shadow: 1px 1px 1px $secondColor;
+    }
+
 }
 
 .langSwitcher{
-
     &__flag {
         margin-right: 1rem;
     }
@@ -193,8 +221,6 @@ header  {
         align-items: center;
         cursor: pointer;    
     }
-
-
 
     &__languageMenu {
         display: none;
@@ -314,37 +340,59 @@ main {
         text-align: center;
         padding: $cloudItemPadding 0;
         border-radius: 20px 20px 0 0;
+        &:hover{
+            translate: 35% 0;
+        }
     }
     &__electroeq{
         width: 382px;
         padding: $cloudItemPadding 0;
         border-radius: 20px 0 0 20px;
+        &:hover{
+            translate: -5% 0;
+            width: 402px;
+        }
     }
     &__cosmetics{
         width: 211px;
         padding: $cloudItemPadding 0;
         position: absolute;
-        translate: 184% -107%;
+        translate: 184% -107.5%;
         border-radius: 0 20px 0 0;
+        &:hover{
+            translate: 200% -107.5%;
+            width: 194px;
+        }
     }
     &__pharma{
         width:301px;
         padding: $cloudItemPadding 0;
         border-radius: 0 0 0 20px;
         translate: 47px 0;
+        &:hover{
+            translate: 89px 0;
+            width: 260px;
+        }
     }
     &__bevereges{
         position: absolute;
-        translate: 179% -107%;
+        translate: 179% -107.5%;
         width: 198px;
         padding: $cloudItemPadding 0;
         border-radius: 0 0 20px 0;
+        &:hover{
+            width: 230px;
+            translate: 154% -107.5%;
+        }
     }
     &__electronics{
         width:293px;
         padding: $cloudItemPadding 0;
         border-radius: 0 0 20px 20px;
         translate: 177px 0;
+        &:hover{
+            translate: 150px 0;
+        }
     }
 
     &__description {
@@ -390,7 +438,11 @@ main {
     }
 
     &__cover {
-        filter: contrast(30%);
+        transition: 0.3s;
+        filter: brightness(0.4);
+        &:hover{
+            filter:brightness(0.8);
+        }
     }
 
     &__left{
@@ -398,7 +450,7 @@ main {
         width: 695px;
         height: 335px;
         & > h1 {
-            outline: 2px red solid;
+            // outline: 2px red solid;
             translate: 15% -350%;
         }
     }
@@ -406,8 +458,222 @@ main {
         width: 695px;
         height: 335px;
         & > h1 {
-            outline: 2px red solid;
+            // outline: 2px red solid;
             translate: 3% -350%;
         }
     }
 }
+
+.adresses {
+    display: flex;
+    justify-content: space-between;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 662px;
+    }
+    &__map {
+        max-width: 695px;
+        border: $mapBorderThick solid $mainColor;
+        border-radius: $mapBorderRound;
+        & > iframe {
+            border-radius: $mapBorderRound;
+        }
+    }
+    &__title {
+        font-weight: 400;
+        text-align: end;
+    }
+    &__description{
+        text-align: end;
+        // margin-bottom: 58px;
+        font-weight: 500;
+    }
+}
+
+.development {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__title{
+        color: $accentColor;
+        text-align: end;
+        min-width: 662px;
+    }
+    &__description{
+        width: 690px;
+        text-align: center;
+        & > p {
+            margin: 1rem 0;
+        }
+    }
+
+    &__span{
+        font-size: 22px;
+        font-weight: 900;
+        color: $accentColor;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10rem;
+    width: 100%;
+    height: 175px;
+    @include gradient(90deg, $mainColor, $secondColor);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width: $wrapperWidth;
+
+    &__left {
+        & > h1 {
+            color: #fff;
+            font-weight: 400;
+            font-size: 3rem;
+        }
+        & > h2 {
+            color: #fff;
+            font-weight: 300;
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (max-width: 425px){
+    header{
+        margin-bottom: 4.8rem;
+    }
+
+    nav{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: $mobileWidth;
+        & > h1{
+            text-align: center;
+            width: 600px;
+        }
+    }
+
+    .industrialEquipment {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 992px){
+
+    .divider{
+        height: 4.8rem;
+    }
+
+    header{
+        margin-bottom: 4.8rem;
+    }
+    .header{
+        &__logo{
+            width: 40%;
+            // height: 100%;
+            border-radius: 0 0 20px;
+        }
+
+    }
+    nav{
+        display: none;
+    }
+    main{
+        max-width: 992px;
+        min-width: 768px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        
+        & > h1{
+            text-align: center;
+        }
+
+    }
+
+    .industrialEquipment{
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+
+        &__description{
+            display: flex;
+            align-content: center;
+            align-items: center;
+            width: 90%;
+            margin: 0;
+            
+            & > a {
+                width: 70%;
+            }
+        }
+
+
+        & > img {
+            width: 90%;
+            height: 90%;
+            margin-bottom: 1rem;
+        }
+
+
+    }
+
+    .advantagesCards{
+        display: flex;
+        flex-direction: column;
+        height: 770px;
+ 
+        & > img {
+            width: 80%;
+            position: relative;
+            translate: 0 0;
+        }
+    }
+
+    .solutions{
+
+        &__cloud{
+            display: inline-block;
+        }
+
+    }
+
+
+    .photocards {
+        width: 100%;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        &__left{
+            margin-bottom: 1rem;
+        }
+
+    }
+
+}
+
+// @media (max-width: 1470px){
+    
+// }
