@@ -770,13 +770,29 @@ footer {
   }
   .solutions__cloud {
     min-width: 0px;
+    min-height: 400px;
+  }
+  .solutions__food {
+    padding: 0;
+    width: 286px;
+    height: 50px;
+    translate: 0%;
+  }
+  .solutions__electroeq {
+    translate: 0%;
   }
   .solutions__cosmetics {
     position: relative;
     translate: 0%;
   }
+  .solutions__pharma {
+    translate: 0%;
+  }
   .solutions__bevereges {
     position: relative;
+    translate: 0%;
+  }
+  .solutions__electronics {
     translate: 0%;
   }
   .solutions__description {
