@@ -768,6 +768,17 @@ footer {
   .solutions {
     margin-bottom: 0rem;
   }
+  .solutions__cloud {
+    min-width: 0px;
+  }
+  .solutions__cosmetics {
+    position: relative;
+    translate: 0%;
+  }
+  .solutions__bevereges {
+    position: relative;
+    translate: 0%;
+  }
   .solutions__description {
     width: 80%;
     height: 300px;

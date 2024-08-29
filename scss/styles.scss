@@ -854,10 +854,11 @@ footer {
     }
     .solutions{
         margin-bottom: 0rem;
-        // width: 80%;
-        // &__cloud{
-        //     height: 70%;
-        // }
+        // width: 100%;
+        &__cloud{
+            min-width: 0px;
+            // width: 100%;
+        }
         // &__food{
         //     padding: 0;
         //     width: 286px;
@@ -867,18 +868,18 @@ footer {
         // &__electroeq{
         //     translate: 0%;
         // }
-        // &__cosmetics{
-        //     position: relative;
-        //     translate: 0%;
-        // }
+        &__cosmetics{
+            position: relative;
+            translate: 0%;
+        }
         // &__pharma{
         //     position: relative;
         //     translate: 0%;
         // }
-        // &__bevereges{
-        //     position: relative;
-        //     translate: 0%;
-        // }
+        &__bevereges{
+            position: relative;
+            translate: 0%;
+        }
         // &__electronics{
         //     translate: 0%;
         // }
