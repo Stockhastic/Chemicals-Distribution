@@ -12,17 +12,18 @@ $fontColor: #000;
 
 $wrapperWidth: 1460px;
 
+$slowAnim: 0.3s;
+$mediumAnim: 0.26s;
+$fastAnim: 0.2s;
+
 // Desktop styles
 
 $header1Size: 4rem;
 $header1Color: $darkColor;
-
 $header2Size: 3.2rem;
 $header2Color: $darkColor;
-
 $header3Size: 2.4rem;
 $header4Size: 2.2rem;
-
 $paragraphSize: 2rem;
 
 $headerHeight: 110px;
@@ -34,8 +35,24 @@ $cloudItemPadding: 18px;
 $mapBorderRound: 5px;
 $mapBorderThick: 5px;
 
-$slowAnim: 0.3s;
-$mediumAnim: 0.26s;
-$fastAnim: 0.2s;
+// Adaptive
+//SmallScreens
+$smallScreensMaxWidth: 1470px;
 
-$mobileWidth: 425px;
+$smallScreensh1Size: 2.7rem;
+$smallScreensh2Size: 2.3rem;
+$smallScreensh3Size: 2rem;
+$smallScreensPSize:1.5rem;
+$smallScreensButtonFontSize: 1.5rem;
+$smallScreensPhotocardsSize: 80%;
+$smallScreensAdressesElementSize: 43%;
+
+//Tablets/Mobiles
+$tabMobMaxWidth: 992px;
+$tabMobDividerHeight: 4rem;
+
+$tabMobH1Size: 2.4rem;
+$tabMobH2Size: 2.4rem;
+$tabMobH3Size: 2.2rem;
+$tabMobH4Size: 2rem;
+$tabMobPSize: 1.8rem;
