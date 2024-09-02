@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Jost-Regular";
-  src: url(/media/fonts/Jost/ttf/Jost-Regular.ttf) format("truetype"), url(/media/fonts/Jost/woff/Jost-Regular.woff) format("woff"), url(/media/fonts/Jost/woff/Jost-Regular.woff2) format("woff2");
+  src: url(media/fonts/Jost/ttf/Jost-Regular.ttf) format("truetype"), url(media/fonts/Jost/woff/Jost-Regular.woff) format("woff"), url(media/fonts/Jost/woff/Jost-Regular.woff2) format("woff2");
 }
 @font-face {
   font-family: "Jost-Medium";
-  src: url(/media/fonts/Jost/ttf/Jost-Medium.ttf) format("truetype"), url(/media/fonts/Jost/woff/Jost-Medium.woff) format("woff"), url(/media/fonts/Jost/woff/Jost-Medium.woff2) format("woff2");
+  src: url(media/fonts/Jost/ttf/Jost-Medium.ttf) format("truetype"), url(media/fonts/Jost/woff/Jost-Medium.woff) format("woff"), url(media/fonts/Jost/woff/Jost-Medium.woff2) format("woff2");
 }
 @font-face {
   font-family: "Jost-SemiBold";
-  src: url(/media/fonts/Jost/ttf/Jost-SemiBold.ttf) format("truetype") url(/media//fonts/Jost/woff/Jost-SemiBold.woff) format("woff"), url(/media/fonts/Jost/woff/Jost-SemiBold.woff2) format("woff2");
+  src: url(media/fonts/Jost/ttf/Jost-SemiBold.ttf) format("truetype") url(/media//fonts/Jost/woff/Jost-SemiBold.woff) format("woff"), url(media/fonts/Jost/woff/Jost-SemiBold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Jost-Light";
-  src: url(/media/fonts/Jost/ttf/Jost-Light.ttf) format("truetype") url(/media/fonts/Jost/woff/Jost-Light.woff) format("woff"), url(/media/fonts/Jost/woff/Jost-Light.woff2) format("woff2");
+  src: url(media/fonts/Jost/ttf/Jost-Light.ttf) format("truetype") url(/media/fonts/Jost/woff/Jost-Light.woff) format("woff"), url(media/fonts/Jost/woff/Jost-Light.woff2) format("woff2");
 }
 * {
   padding: 0;
