@@ -225,13 +225,11 @@ header {
         display: inline-block;
         translate: -5px 25%;
         content: url("../media/graphics/png/navLinkPhone.png");
-        // filter: hue-rotate(60deg);
     }
 
     &:hover {
         transform: translateX(-5px);
         color: $accentColor;
-        // text-shadow: 1px 1px 1px $secondColor;
     }
 
 }
@@ -339,7 +337,6 @@ main {
 
 .industrialEquipment {
     display: flex;
-    // flex-wrap: wrap;
     margin-top: 6rem;
 
     &__description {
