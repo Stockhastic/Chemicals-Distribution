@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Jost-Regular";
-  src: url(media/fonts/Jost/ttf/Jost-Regular.ttf) format("truetype"), url(media/fonts/Jost/woff/Jost-Regular.woff) format("woff"), url(media/fonts/Jost/woff/Jost-Regular.woff2) format("woff2");
+  src: url(/media/fonts/Jost/ttf/Jost-Regular.ttf) format("truetype"), url(/media/fonts/Jost/woff/Jost-Regular.woff) format("woff"), url(/media/fonts/Jost/woff/Jost-Regular.woff2) format("woff2");
 }
 @font-face {
   font-family: "Jost-Medium";
-  src: url(media/fonts/Jost/ttf/Jost-Medium.ttf) format("truetype"), url(media/fonts/Jost/woff/Jost-Medium.woff) format("woff"), url(media/fonts/Jost/woff/Jost-Medium.woff2) format("woff2");
+  src: url(/media/fonts/Jost/ttf/Jost-Medium.ttf) format("truetype"), url(/media/fonts/Jost/woff/Jost-Medium.woff) format("woff"), url(/media/fonts/Jost/woff/Jost-Medium.woff2) format("woff2");
 }
 @font-face {
   font-family: "Jost-SemiBold";
-  src: url(media/fonts/Jost/ttf/Jost-SemiBold.ttf) format("truetype") url(/media//fonts/Jost/woff/Jost-SemiBold.woff) format("woff"), url(media/fonts/Jost/woff/Jost-SemiBold.woff2) format("woff2");
+  src: url(/media/fonts/Jost/ttf/Jost-SemiBold.ttf) format("truetype") url(/media//fonts/Jost/woff/Jost-SemiBold.woff) format("woff"), url(/media/fonts/Jost/woff/Jost-SemiBold.woff2) format("woff2");
 }
 @font-face {
   font-family: "Jost-Light";
-  src: url(media/fonts/Jost/ttf/Jost-Light.ttf) format("truetype") url(/media/fonts/Jost/woff/Jost-Light.woff) format("woff"), url(media/fonts/Jost/woff/Jost-Light.woff2) format("woff2");
+  src: url(/media/fonts/Jost/ttf/Jost-Light.ttf) format("truetype") url(/media/fonts/Jost/woff/Jost-Light.woff) format("woff"), url(/media/fonts/Jost/woff/Jost-Light.woff2) format("woff2");
 }
 * {
   padding: 0;
@@ -155,12 +155,18 @@ header {
   height: 30px;
 }
 
-.orangeHover:hover {
+.colorHover:hover {
   background-color: #FF9D42;
 }
-.orangeHover:hover > a {
+.colorHover:hover > a {
   color: #fff;
   transform: translateX(10px);
+}
+.colorHover::before {
+  content: "";
+  width: 15px;
+  height: 61px;
+  background-color: #FF9D42;
 }
 
 .contactsLink {
@@ -185,9 +191,11 @@ header {
   display: inline-block;
   translate: -5px 25%;
   content: url(/media/graphics/png/navLinkPhone.png);
+  filter: hue-rotate(60deg);
 }
 .phoneLink:hover {
   transform: translateX(-5px);
+  color: #FF9D42;
 }
 
 .langSwitcher__flag {
@@ -490,7 +498,7 @@ main {
 }
 .adresses__map {
   max-width: 695px;
-  border: 5px solid #693095;
+  border: 5px solid #A05FD2;
   border-radius: 5px;
 }
 .adresses__map > iframe {
@@ -499,6 +507,7 @@ main {
 .adresses__title {
   font-weight: 400;
   text-align: end;
+  color: #A05FD2;
 }
 .adresses__description {
   text-align: end;
@@ -598,7 +607,7 @@ footer {
   .contactsLink {
     margin-right: 2rem;
   }
-  .orangeHover > img {
+  .colorHover::before {
     height: 49px;
   }
   main {
