@@ -64,7 +64,7 @@ p {
 }
 
 .accentColor {
-  color: #ffcd82;
+  color: #ffda60;
   font-family: "Jost-SemiBold", "Arial", "Helvetica", "sans-serif";
 }
 
@@ -156,7 +156,7 @@ header {
 }
 
 .colorHover:hover {
-  background-color: #ffcd82;
+  background-color: #ffda60;
 }
 .colorHover:hover > a {
   color: #fff;
@@ -166,7 +166,7 @@ header {
   content: "";
   width: 15px;
   height: 61px;
-  background-color: #ffcd82;
+  background-color: #ffda60;
 }
 
 .contactsLink {
@@ -195,7 +195,7 @@ header {
 }
 .phoneLink:hover {
   transform: translateX(-5px);
-  color: #ffcd82;
+  color: #ffda60;
 }
 
 .langSwitcher__flag {
@@ -442,7 +442,7 @@ main {
   margin-bottom: 5px;
 }
 .cloud_main:hover {
-  background-color: #ffcd82;
+  background-color: #ffda60;
 }
 .cloud_dark {
   transition: 0.3s;
@@ -450,7 +450,7 @@ main {
   margin-bottom: 5px;
 }
 .cloud_dark:hover {
-  background-color: #ffcd82;
+  background-color: #ffda60;
 }
 
 .photocards {
@@ -520,7 +520,7 @@ main {
   align-items: center;
 }
 .development__title {
-  color: #ffcd82;
+  color: #ffda60;
   text-align: end;
   min-width: 662px;
 }
@@ -534,7 +534,7 @@ main {
 .development__span {
   font-size: 22px;
   font-weight: 900;
-  color: #ffcd82;
+  color: #ffda60;
 }
 
 footer {
