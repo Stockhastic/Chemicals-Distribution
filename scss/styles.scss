@@ -183,7 +183,7 @@ header {
     }
 }
 
-.orangeHover {
+.colorHover {
     &:hover {
         background-color: $accentColor;
     }
@@ -191,6 +191,13 @@ header {
     &:hover>a {
         color: #fff;
         transform: translateX(10px);
+    }
+
+    &::before {
+        content: '';
+        width: 15px;
+        height: 61px;
+        background-color: $accentColor;
     }
 
 }
@@ -218,10 +225,12 @@ header {
         display: inline-block;
         translate: -5px 25%;
         content: url(/media/graphics/png/navLinkPhone.png);
+        filter: hue-rotate(260deg);
     }
 
     &:hover {
         transform: translateX(-5px);
+        color: $accentColor;
         // text-shadow: 1px 1px 1px $secondColor;
     }
 
@@ -230,6 +239,7 @@ header {
 .langSwitcher {
     &__flag {
         margin-right: 1rem;
+
     }
 
     &__btn {
@@ -590,7 +600,7 @@ main {
 
     &__map {
         max-width: 695px;
-        border: $mapBorderThick solid $mainColor;
+        border: $mapBorderThick solid $secondColor;
         border-radius: $mapBorderRound;
 
         &>iframe {
@@ -601,6 +611,7 @@ main {
     &__title {
         font-weight: 400;
         text-align: end;
+        color: $secondColor;
     }
 
     &__description {
@@ -732,8 +743,8 @@ footer {
         margin-right: 2rem;
     }
 
-    .orangeHover {
-        &>img {
+    .colorHover {
+        &::before {
             height: 49px;
         }
     }
