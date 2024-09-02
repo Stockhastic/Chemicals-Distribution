@@ -190,7 +190,7 @@ header {
 .phoneLink::before {
   display: inline-block;
   translate: -5px 25%;
-  content: url(/media/graphics/png/navLinkPhone.png);
+  content: url("../media/graphics/png/navLinkPhone.png");
   filter: hue-rotate(60deg);
 }
 .phoneLink:hover {
