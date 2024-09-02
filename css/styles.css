@@ -38,13 +38,13 @@ ul li {
 
 h1 {
   font-size: 4rem;
-  color: #04060F;
+  color: #087264;
   font-family: "Jost-SemiBold", "Arial", "Helvetica", "sans-serif";
 }
 
 h2 {
   font-size: 3.2rem;
-  color: #04060F;
+  color: #087264;
   font-family: "Jost-Medium", "Arial", "Helvetica", "sans-serif";
 }
 
@@ -64,7 +64,7 @@ p {
 }
 
 .accentColor {
-  color: #ee2e2b;
+  color: #42aae9;
   font-family: "Jost-SemiBold", "Arial", "Helvetica", "sans-serif";
 }
 
@@ -93,9 +93,9 @@ body {
 }
 
 .btn_light {
-  background: linear-gradient(90deg, #03353E, #0294A5);
+  background: linear-gradient(90deg, #39a88c, #56ca8a);
   transition: 0.26s;
-  border: 2px solid #03353E;
+  border: 2px solid #39a88c;
   position: relative;
   -webkit-background-clip: text;
           background-clip: text;
@@ -107,7 +107,7 @@ body {
   transform: translateY(5px);
   color: #fff;
   background-clip: unset;
-  border: 2px solid #0294A5;
+  border: 2px solid #56ca8a;
 }
 
 nav {
@@ -126,7 +126,7 @@ header {
 
 .header__logo {
   padding: 15px 30px;
-  background: linear-gradient(0deg, #03353E, #0294A5);
+  background: linear-gradient(0deg, #39a88c, #56ca8a);
 }
 .header__navigation {
   display: flex;
@@ -156,7 +156,7 @@ header {
 }
 
 .colorHover:hover {
-  background-color: #ee2e2b;
+  background-color: #42aae9;
 }
 .colorHover:hover > a {
   color: #fff;
@@ -166,11 +166,11 @@ header {
   content: "";
   width: 15px;
   height: 61px;
-  background-color: #ee2e2b;
+  background-color: #42aae9;
 }
 
 .contactsLink {
-  background: linear-gradient(0deg, #03353E, #0294A5);
+  background: linear-gradient(0deg, #39a88c, #56ca8a);
   padding: 1rem 4rem;
   color: #fff;
   margin-left: 0;
@@ -185,7 +185,7 @@ header {
   transition: 0.3s;
   font-size: 20px;
   font-family: "Jost-Medium";
-  color: #03353E;
+  color: #39a88c;
 }
 .phoneLink::before {
   display: inline-block;
@@ -195,7 +195,7 @@ header {
 }
 .phoneLink:hover {
   transform: translateX(-5px);
-  color: #ee2e2b;
+  color: #42aae9;
 }
 
 .langSwitcher__flag {
@@ -210,7 +210,7 @@ header {
 .langSwitcher__languageMenu {
   display: none;
   padding: 1.5rem 2rem;
-  border: 2px solid #0294A5;
+  border: 2px solid #56ca8a;
   border-radius: 20px;
   position: absolute;
   translate: -66% 30%;
@@ -225,7 +225,7 @@ header {
 .langSwitcher__languageLink > a {
   font-family: "Jost-Medium";
   font-size: 2.4rem;
-  color: #0294A5;
+  color: #56ca8a;
 }
 .langSwitcher__languageLink > img {
   width: 3rem;
@@ -247,7 +247,7 @@ header {
   width: 80%;
   transform: scale(1);
   border-radius: 5px;
-  background-color: #0294A5;
+  background-color: #56ca8a;
 }
 .burger::before, .burger::after {
   transition: 0.3s;
@@ -255,7 +255,7 @@ header {
   content: "";
   height: 5px;
   width: 80%;
-  background-color: #0294A5;
+  background-color: #56ca8a;
   border-radius: 5px;
 }
 .burger::before {
@@ -312,7 +312,7 @@ main {
 }
 .advantages__card {
   transition: 0.3s;
-  background: linear-gradient(90deg, #03353E, #0294A5);
+  background: linear-gradient(90deg, #39a88c, #56ca8a);
 }
 .advantages__title {
   color: #fff;
@@ -438,19 +438,19 @@ main {
 
 .cloud_main {
   transition: 0.3s;
-  background-color: #0294A5;
+  background-color: #56ca8a;
   margin-bottom: 5px;
 }
 .cloud_main:hover {
-  background-color: #ee2e2b;
+  background-color: #42aae9;
 }
 .cloud_dark {
   transition: 0.3s;
-  background-color: #03353E;
+  background-color: #39a88c;
   margin-bottom: 5px;
 }
 .cloud_dark:hover {
-  background-color: #ee2e2b;
+  background-color: #42aae9;
 }
 
 .photocards {
@@ -498,7 +498,7 @@ main {
 }
 .adresses__map {
   max-width: 695px;
-  border: 5px solid #0294A5;
+  border: 5px solid #56ca8a;
   border-radius: 5px;
 }
 .adresses__map > iframe {
@@ -507,7 +507,7 @@ main {
 .adresses__title {
   font-weight: 400;
   text-align: end;
-  color: #0294A5;
+  color: #56ca8a;
 }
 .adresses__description {
   text-align: end;
@@ -520,7 +520,7 @@ main {
   align-items: center;
 }
 .development__title {
-  color: #ee2e2b;
+  color: #42aae9;
   text-align: end;
   min-width: 662px;
 }
@@ -534,7 +534,7 @@ main {
 .development__span {
   font-size: 22px;
   font-weight: 900;
-  color: #ee2e2b;
+  color: #42aae9;
 }
 
 footer {
@@ -545,7 +545,7 @@ footer {
   align-content: center;
   width: 100%;
   height: 175px;
-  background: linear-gradient(90deg, #03353E, #0294A5);
+  background: linear-gradient(90deg, #39a88c, #56ca8a);
 }
 
 .wrapper {
@@ -812,7 +812,7 @@ footer {
     justify-content: space-between;
     position: fixed;
     overflow-y: auto;
-    background: linear-gradient(90deg, #03353E, #0294A5);
+    background: linear-gradient(90deg, #39a88c, #56ca8a);
     width: 100%;
     height: 100%;
     bottom: 0;
