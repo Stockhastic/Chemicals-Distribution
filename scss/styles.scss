@@ -6,45 +6,50 @@
 @font-face {
     font-family: 'Jost-Regular';
     src: url(/media/fonts/Jost/ttf/Jost-Regular.ttf) format('truetype'),
-    url(/media/fonts/Jost/woff/Jost-Regular.woff) format('woff'),
-    url(/media/fonts/Jost/woff/Jost-Regular.woff2) format('woff2');
+        url(/media/fonts/Jost/woff/Jost-Regular.woff) format('woff'),
+        url(/media/fonts/Jost/woff/Jost-Regular.woff2) format('woff2');
 }
+
 @font-face {
     font-family: 'Jost-Medium';
     src: url(/media/fonts/Jost/ttf/Jost-Medium.ttf) format('truetype'),
-    url(/media/fonts/Jost/woff/Jost-Medium.woff) format('woff'),
-    url(/media/fonts/Jost/woff/Jost-Medium.woff2) format('woff2');
+        url(/media/fonts/Jost/woff/Jost-Medium.woff) format('woff'),
+        url(/media/fonts/Jost/woff/Jost-Medium.woff2) format('woff2');
 }
+
 @font-face {
     font-family: 'Jost-SemiBold';
-    src: url(/media/fonts/Jost/ttf/Jost-SemiBold.ttf) format('truetype')
-    url(/media//fonts/Jost/woff/Jost-SemiBold.woff) format('woff'),
-    url(/media/fonts/Jost/woff/Jost-SemiBold.woff2) format('woff2');
+    src: url(/media/fonts/Jost/ttf/Jost-SemiBold.ttf) format('truetype') url(/media//fonts/Jost/woff/Jost-SemiBold.woff) format('woff'),
+        url(/media/fonts/Jost/woff/Jost-SemiBold.woff2) format('woff2');
 }
+
 @font-face {
     font-family: 'Jost-Light';
-    src: url(/media/fonts/Jost/ttf/Jost-Light.ttf) format('truetype')
-    url(/media/fonts/Jost/woff/Jost-Light.woff) format('woff'),
-    url(/media/fonts/Jost/woff/Jost-Light.woff2) format('woff2');
+    src: url(/media/fonts/Jost/ttf/Jost-Light.ttf) format('truetype') url(/media/fonts/Jost/woff/Jost-Light.woff) format('woff'),
+        url(/media/fonts/Jost/woff/Jost-Light.woff2) format('woff2');
 }
 
 //RESET STYLES
 * {
-	padding: 0;
-	margin: 0;
-	border: none;
+    padding: 0;
+    margin: 0;
+    border: none;
     font-size: 10px;
 }
 
-a, a:link, a:visited  {
-    text-decoration: none;
-}
-a:hover  {
+a,
+a:link,
+a:visited {
     text-decoration: none;
 }
 
-ul, ul li {
-	list-style: none;
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ul li {
+    list-style: none;
 }
 
 // FONT STYLES AND SPANS
@@ -53,41 +58,49 @@ h1 {
     color: $header1Color;
     font-family: "Jost-SemiBold", "Arial", "Helvetica", "sans-serif";
 }
+
 h2 {
     font-size: $header2Size;
     color: $header2Color;
     font-family: "Jost-Medium", "Arial", "Helvetica", "sans-serif";
 }
+
 h3 {
     font-size: $header3Size;
     font-family: "Jost-Light", "Arial", "Helvetica", "sans-serif";
 }
+
 h4 {
     font-size: $header4Size;
     font-family: "Jost-Regular", "Arial", "Helvetica", "sans-serif";
 }
+
 p {
     font-size: $paragraphSize;
     font-family: "Jost-Regular", "Arial", "Helvetica", "sans-serif";
 }
+
 .accentColor {
     color: $accentColor;
     font-family: "Jost-SemiBold", "Arial", "Helvetica", "sans-serif";
 }
 
 // MAIN CODE
-.divider{
+.divider {
     height: $dividerHeight;
 }
+
 strong {
     font-size: $paragraphSize;
 }
+
 body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     color: #000;
 }
+
 .btn {
     display: flex;
     justify-content: center;
@@ -95,29 +108,33 @@ body {
     font-size: 2rem;
     font-family: "jost-Medium";
     padding: 1rem 2rem;
-    
+
 }
+
 .btn_light {
     @include gradient(90deg, $mainColor, $secondColor);
     transition: 0.26s;
     border: 2px solid $mainColor;
     position: relative;
-    background-clip: text; 
+    background-clip: text;
     color: transparent;
     width: 330px;
     height: 40px;
-    &:hover{
+
+    &:hover {
         transform: translateY(5px);
         color: #fff;
-        background-clip:unset;
+        background-clip: unset;
         border: 2px solid $secondColor;
     }
 }
+
 nav {
     display: flex;
     align-items: center;
 }
-header  {
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,8 +142,9 @@ header  {
     height: $headerHeight;
     margin-bottom: 11rem;
 }
+
 .header {
-    
+
     &__logo {
         padding: 15px 30px;
         @include gradient(0deg, $mainColor, $secondColor);
@@ -138,15 +156,19 @@ header  {
         align-items: center;
         height: $headerHeight;
 
-        & > li {
+        &>li {
             display: flex;
             align-items: center;
             transition: $slowAnim;
         }
     }
 
+    &__navigationMobile {
+        display: none;
+    }
+
     &__link {
-        transition: $slowAnim; 
+        transition: $slowAnim;
         color: #000;
         font-size: $headerNavLinkSize;
         font-family: "Jost-Regular";
@@ -154,22 +176,25 @@ header  {
         margin-left: 1.5rem;
     }
 
-    &__langSwitcher{
+    &__langSwitcher {
         display: flex;
         width: 60px;
         height: 30px;
     }
 }
-.orangeHover{
-    &:hover{
+
+.orangeHover {
+    &:hover {
         background-color: $accentColor;
     }
-    &:hover > a{
+
+    &:hover>a {
         color: #fff;
         transform: translateX(10px);
     }
 
 }
+
 .contactsLink {
     @include gradient(0deg, $mainColor, $secondColor);
     padding: 1rem 4rem;
@@ -177,10 +202,12 @@ header  {
     margin-left: 0;
     font-family: "Jost-Regular";
     font-weight: 400;
-    &:hover{
+
+    &:hover {
         transform: translateY(-5px);
     }
 }
+
 .phoneLink {
     transition: $slowAnim;
     font-size: $headerPhoneLinkSize;
@@ -199,16 +226,17 @@ header  {
     }
 
 }
-.langSwitcher{
+
+.langSwitcher {
     &__flag {
         margin-right: 1rem;
     }
 
     &__btn {
         background-color: #fff;
-        display:flex;
+        display: flex;
         align-items: center;
-        cursor: pointer;    
+        cursor: pointer;
     }
 
     &__languageMenu {
@@ -227,34 +255,39 @@ header  {
         justify-content: space-between;
         align-items: center;
     }
-    &__languageLink > a {
+
+    &__languageLink>a {
         font-family: "Jost-Medium";
         font-size: $header3Size;
         color: $secondColor;
     }
-    &__languageLink > img {
+
+    &__languageLink>img {
         width: 3rem;
-        height : 3rem;
+        height: 3rem;
         margin-right: 1rem;
     }
 }
 
-.burger{
-    display: flex;
+.burger {
+    display: none;
     z-index: 10;
     position: relative;
     align-items: center;
     justify-content: flex-end;
     width: 45px;
     height: 25px;
-    & > span{
+
+    &>span {
         height: 5px;
         width: 80%;
         transform: scale(1);
         border-radius: 5px;
         background-color: $secondColor;
     }
-    &::before, &::after{
+
+    &::before,
+    &::after {
         transition: $slowAnim;
         position: absolute;
         content: '';
@@ -263,16 +296,38 @@ header  {
         background-color: $secondColor;
         border-radius: 5px;
     }
-    &::before{
+
+    &::before {
         top: 0;
     }
-    &::after{
+
+    &::after {
         bottom: 0;
     }
+
+    &.active span {
+        transform: scale(0);
+    }
+
+    &.active::before {
+        top: 50%;
+        transform: rotate(45deg);
+        translate: 0 -50%;
+        background-color: #fff;
+    }
+
+    &.active::after {
+        bottom: 50%;
+        transform: rotate(-45deg);
+        translate: 0 50%;
+        background-color: #fff;
+    }
 }
+
 main {
     width: $wrapperWidth;
 }
+
 .industrialEquipment {
     display: flex;
     // flex-wrap: wrap;
@@ -283,18 +338,19 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    
-        & > h2 {
+
+        &>h2 {
             max-height: 45px;
             font-weight: 400;
         }
-    
-        & > p {
+
+        &>p {
             max-width: 770px;
             margin: 1.5rem 0;
         }
     }
 }
+
 .advantages {
     margin: -10rem 0;
     display: flex;
@@ -304,15 +360,16 @@ main {
 
 
 
-    &__card{
+    &__card {
         transition: 0.3s;
         @include gradient(90deg, $mainColor, $secondColor);
     }
-    &__title{
+
+    &__title {
         color: #fff;
     }
 
-    &_quality{
+    &_quality {
         align-self: flex-end;
         width: 456px;
         height: 154px;
@@ -320,21 +377,25 @@ main {
         padding: 20px 57px;
         transform: translateY(115px);
         z-index: -1;
-        & > p{
+
+        &>p {
             padding-left: 70px;
         }
     }
-    &_maintenance{
+
+    &_maintenance {
         width: 427px;
         height: 143px;
         padding: 20px 57px;
-        & > p{
+
+        &>p {
             padding-top: 20px;
             padding-left: 60px;
         }
-    
+
     }
-    &_reliability{
+
+    &_reliability {
         align-self: flex-start;
         width: 400px;
         height: 130px;
@@ -343,28 +404,31 @@ main {
         padding: 20px 57px;
     }
 }
+
 .solutions {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
     &__title {
         width: 100%;
         min-width: none;
         text-align: center;
         margin-bottom: 70px;
     }
-    &__cloud{
+
+    &__cloud {
         position: relative;
         text-align: center;
         color: #fff;
         position: relative;
-        min-width:600px;
+        min-width: 600px;
         width: 600px;
-        height: 300px; 
+        height: 300px;
     }
 
-    &__food{
+    &__food {
         position: relative;
         translate: 25%;
         width: 374px;
@@ -372,57 +436,68 @@ main {
         text-align: center;
         padding: $cloudItemPadding 0;
         border-radius: 20px 20px 0 0;
-        &:hover{
+
+        &:hover {
             translate: 35% 0;
         }
     }
-    &__electroeq{
+
+    &__electroeq {
         width: 382px;
         padding: $cloudItemPadding 0;
         border-radius: 20px 0 0 20px;
-        &:hover{
+
+        &:hover {
             translate: -5% 0;
             width: 402px;
         }
     }
-    &__cosmetics{
+
+    &__cosmetics {
         width: 211px;
         padding: $cloudItemPadding 0;
         position: absolute;
         translate: 184% -107.5%;
         border-radius: 0 20px 0 0;
-        &:hover{
+
+        &:hover {
             translate: 200% -107.5%;
             width: 194px;
         }
     }
-    &__pharma{
-        width:301px;
+
+    &__pharma {
+        width: 301px;
         padding: $cloudItemPadding 0;
         border-radius: 0 0 0 20px;
         translate: 47px 0;
-        &:hover{
+
+        &:hover {
             translate: 89px 0;
             width: 260px;
         }
     }
-    &__bevereges{
+
+    &__bevereges {
         position: absolute;
         translate: 179% -107.5%;
         width: 198px;
         padding: $cloudItemPadding 0;
         border-radius: 0 0 20px 0;
-        &:hover{
+
+        &:hover {
             width: 230px;
             translate: 154% -107.5%;
         }
     }
-    &__electronics{
-        width:293px;
+
+    &__electronics {
+        width: 293px;
         padding: $cloudItemPadding 0;
         border-radius: 0 0 20px 20px;
         translate: 177px 0;
-        &:hover{
+
+        &:hover {
             translate: 150px 0;
         }
     }
@@ -434,114 +509,135 @@ main {
         font-weight: 100;
     }
 }
+
 .cloud {
-    &_main{
+    &_main {
         transition: 0.3s;
         background-color: $secondColor;
         margin-bottom: 5px;
-        &:hover{
+
+        &:hover {
             background-color: $accentColor;
         }
 
     }
-    &_dark{
+
+    &_dark {
         transition: 0.3s;
         background-color: $mainColor;
         margin-bottom: 5px;
-        &:hover{
+
+        &:hover {
             background-color: $accentColor;
         }
 
     }
 
 }
-.photocards{
+
+.photocards {
     display: flex;
     justify-content: space-between;
 
-    &__title{
+    &__title {
         position: absolute;
         color: #fff;
         font-size: 3.6rem;
         font-family: "Jost-Regular";
         font-weight: 400;
     }
+
     &__cover {
         transition: 0.3s;
         filter: brightness(0.4);
-        &:hover{
-            filter:brightness(0.8);
+
+        &:hover {
+            filter: brightness(0.8);
         }
     }
-    &__left{
+
+    &__left {
         width: 695px;
         height: 335px;
-        & > h1 {
+
+        &>h1 {
             // outline: 2px red solid;
             translate: 15% -350%;
         }
     }
-    &__right{
+
+    &__right {
         width: 695px;
         height: 335px;
-        & > h1 {
+
+        &>h1 {
             // outline: 2px red solid;
             translate: 3% -350%;
         }
     }
 }
+
 .adresses {
     display: flex;
     justify-content: space-between;
+
     &__info {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         width: 662px;
     }
+
     &__map {
         max-width: 695px;
         border: $mapBorderThick solid $mainColor;
         border-radius: $mapBorderRound;
-        & > iframe {
+
+        &>iframe {
             border-radius: $mapBorderRound;
         }
     }
+
     &__title {
         font-weight: 400;
         text-align: end;
     }
-    &__description{
+
+    &__description {
         text-align: end;
         // margin-bottom: 58px;
         font-weight: 500;
     }
 }
+
 .development {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 
-    &__title{
+    &__title {
         color: $accentColor;
         text-align: end;
         min-width: 662px;
     }
-    &__description{
+
+    &__description {
         width: 690px;
         text-align: center;
-        & > p {
+
+        &>p {
             margin: 1rem 0;
         }
     }
 
-    &__span{
+    &__span {
         font-size: 22px;
         font-weight: 900;
         color: $accentColor;
     }
 }
+
 footer {
     display: flex;
     flex-direction: row;
@@ -553,6 +649,7 @@ footer {
     height: 175px;
     @include gradient(90deg, $mainColor, $secondColor);
 }
+
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -562,12 +659,13 @@ footer {
     width: $wrapperWidth;
 
     &__left {
-        & > h1 {
+        &>h1 {
             color: #fff;
             font-weight: 400;
             font-size: 3rem;
         }
-        & > h2 {
+
+        &>h2 {
             color: #fff;
             font-weight: 300;
             font-size: 3rem;
@@ -575,135 +673,165 @@ footer {
     }
 }
 
-@media (max-width: $giantScreensMaxWidth){
-    .solutions{
-        &__mobileCloud{
+@media (max-width: $giantScreensMaxWidth) {
+    .solutions {
+        &__mobileCloud {
             display: none;
         }
     }
-    .photocards{
-        &__mobileGraphics{
+
+    .photocards {
+        &__mobileGraphics {
             display: none;
         }
     }
 
 }
 
-@media (max-width: $smallScreensMaxWidth){
-    h1{
+@media (max-width: $smallScreensMaxWidth) {
+    h1 {
         font-size: $smallScreensh1Size;
     }
-    h2{
+
+    h2 {
         font-size: $smallScreensh2Size;
     }
-    h3{
+
+    h3 {
         font-size: $smallScreensh3Size;
     }
-    p{
+
+    p {
         font-size: $smallScreensPSize;
-        & > strong{
+
+        &>strong {
             font-size: $smallScreensPSize;
         }
     }
-    .divider{
+
+    .divider {
         height: 5rem;
     }
 
-    header{
+    header {
         margin-bottom: 3rem;
     }
-    .header{
-        &__link{
+
+    .header {
+        &__link {
             font-size: 2rem;
         }
     }
-    .phoneLink{
+
+    .phoneLink {
         font-size: 1.5rem;
         margin-right: 1rem;
     }
-    .contactsLink{
+
+    .contactsLink {
         margin-right: 2rem;
     }
-    .orangeHover{
-        & > img{
+
+    .orangeHover {
+        &>img {
             height: 49px;
         }
     }
-    main{
+
+    main {
         width: 100%;
-        & > h1{
+
+        &>h1 {
             margin-left: 5rem;
         }
-    }  
-    nav{
+    }
+
+    nav {
         margin-right: 3rem;
     }
-    .industrialEquipment{
+
+    .industrialEquipment {
         justify-content: center;
         margin-top: 2rem;
-        & > img{
+
+        &>img {
             margin: 0 2rem;
             width: 30%;
             height: 1%;
         }
-        &__description{
+
+        &__description {
             margin: 0 2rem;
-            & > .btn_light{
+
+            &>.btn_light {
                 font-size: $smallScreensButtonFontSize;
-                height: 7%;            
+                height: 7%;
             }
         }
     }
-    .advantages{
+
+    .advantages {
         margin: -10rem 4rem;
 
-        &_quality{
+        &_quality {
             width: 30%;
             height: 20%;
             transform: translateY(60%);
-            & > p {
+
+            &>p {
                 padding-left: 75px;
             }
         }
-        &_maintenance{
+
+        &_maintenance {
             width: 30%;
             height: 20%;
         }
-        &_reliability{
+
+        &_reliability {
             width: 28%;
             height: 20%;
             transform: translateY(-55%);
         }
     }
-    .solutions{
-        &__title{
+
+    .solutions {
+        &__title {
             margin: 2rem;
         }
+
         justify-content: space-around;
-        &__description{
+
+        &__description {
             margin-left: 1rem;
             font-size: $smallScreensh3Size;
             width: 40%;
         }
-        &__mobileCloud{
+
+        &__mobileCloud {
             display: none;
         }
     }
-    .photocards{
+
+    .photocards {
         justify-content: space-around;
-        & > figure{
-            width:43%;
+
+        &>figure {
+            width: 43%;
             height: 100%;
-            & > img{
+
+            &>img {
                 width: 100%;
                 height: 80%;
             }
         }
-        &__left{
+
+        &__left {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            & > h1{
+
+            &>h1 {
                 text-align: center;
                 width: 43%;
                 font-size: $smallScreensh1Size;
@@ -712,12 +840,14 @@ footer {
                 // color: red;
             }
         }
-        &__right{
+
+        &__right {
             display: flex;
             flex-direction: column;
             justify-content: center;
             width: 43%;
-            & > h1{
+
+            &>h1 {
                 text-align: center;
                 width: 43%;
                 min-width: 200px;
@@ -727,220 +857,337 @@ footer {
                 // color: red;
             }
         }
-        &__cover{
+
+        &__cover {
             width: $smallScreensPhotocardsSize;
         }
     }
-    .adresses{
+
+    .adresses {
         justify-content: space-around;
-        &__map{
-            width:$smallScreensAdressesElementSize;
-            & > iframe{
-                width:100%;
+
+        &__map {
+            width: $smallScreensAdressesElementSize;
+
+            &>iframe {
+                width: 100%;
             }
         }
-        &__info{
+
+        &__info {
             justify-content: center;
             width: $smallScreensAdressesElementSize;
         }
-        &__contacts{
+
+        &__contacts {
             margin-top: 2rem;
         }
     }
-    .development{
+
+    .development {
         justify-content: space-around;
         flex-wrap: nowrap;
-        &__title{  
+
+        &__title {
             text-align: end;
             min-width: 0px;
             width: 43%;
             font-size: $smallScreensh2Size;
         }
-        &__description{
+
+        &__description {
             min-width: 10%;
             width: 43%;
-            & > p{
+
+            &>p {
                 font-size: $smallScreensh3Size;
             }
         }
     }
-    .wrapper{
-        &__left{
+
+    .wrapper {
+        &__left {
             margin-left: 3rem;
         }
-        & > img{
+
+        &>img {
             margin-right: 3rem;
         }
     }
 }
 
-//Decided to make a version for tablets and mobiles in one @media but compensate with responsiveness
 @media (max-width: $tabMobMaxWidth) {
 
-    h1{
+    .visibleSwitcher {
+        display: flex !important;
+    }
+
+    h1 {
         font-size: $tabMobH1Size;
         font-weight: 800;
     }
-    h2{
+
+    h2 {
         font-size: $tabMobH2Size;
     }
-    h3{
+
+    h3 {
         font-size: $tabMobH3Size;
     }
-    h4{
+
+    h4 {
         font-size: $tabMobH4Size;
     }
-    p{
+
+    p {
         font-size: $tabMobPSize;
     }
-    .divider{
+
+    .divider {
         height: $tabMobDividerHeight;
     }
-    header{
+
+    header {
         margin-bottom: 4.8rem;
     }
-    .header{
-        &__logo{
-        width: 50%;
+
+    .header {
+        &__logo {
+            width: 50%;
             border-radius: 0 0 20px;
         }
 
+        &__navigation {
+            display: none;
+        }
+
+        &__navigationMobile {
+            // display: none;
+            margin: 0 5rem;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        &__linkMobile {
+            font-family: "Jost-Medium";
+            font-size: $tabMobH1Size*1.5;
+            color: #fff;
+
+            &::before {
+                display: flex;
+                position: absolute;
+                content: '';
+                width: 8px;
+                height: 46px;
+                background-color: #fff;
+                translate: -25px 0;
+            }
+        }
+
+        &__langSwitcher {
+            display: none;
+        }
     }
-    nav{
+
+    nav {
+        animation: mobileMenu 0.3s;
         display: none;
+        z-index: 5;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: fixed;
+        overflow-y: auto;
+        @include gradient(90deg, $mainColor, $secondColor);
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
     }
-    main{
+
+    .burger {
+        // position: fixed;
+        display: flex;
+        margin-right: 3rem;
+        // margin-top: 4rem;
+    }
+
+    main {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-content: center;
-        
-        & > h1{
+
+        &>h1 {
             // width: 370px;
             margin: 0;
             text-align: center;
         }
     }
-    .industrialEquipment{
+
+    .industrialEquipment {
         display: flex;
         flex-flow: column nowrap;
         align-content: center;
         align-items: center;
         text-align: center;
 
-        &__description{
+        &__description {
             display: flex;
             align-content: center;
             align-items: center;
             text-align: justify;
             width: 80%;
             margin: 0;
-            
-            & > a {
+
+            &>a {
                 width: 85%;
             }
         }
 
-        & > img {
+        &>img {
             width: 80%;
             height: 90%;
             margin: 0 3rem 1rem;
         }
     }
-    .advantages{
+
+    .advantages {
         width: 100%;
         margin: 0;
         margin-top: -3rem;
         text-align: center;
         align-content: center;
         justify-content: center;
-        
-        &_quality{
+
+        &_quality {
             transform: translateY(1px);
             z-index: 1;
         }
-        &_maintenance{
+
+        &_maintenance {
             height: 25%;
         }
-        &_reliability{
+
+        &_reliability {
             transform: translateY(-1px);
-            & > h1,p{
+
+            &>h1,
+            p {
                 transform: translateY(-20px);
             }
         }
 
-        
-        &__card{
+
+        &__card {
             width: 60%;
-            & > p{
+
+            &>p {
                 font-weight: 100;
                 padding-left: 0;
                 padding-bottom: 1rem;
             }
         }
     }
-    .solutions{
+
+    .solutions {
         margin-bottom: 0rem;
-        &__title{
-        margin-top: -4rem;
+
+        &__title {
+            margin-top: -4rem;
         }
-        &__cloud{
+
+        &__cloud {
             display: none;
         }
-        &__mobileCloud{
+
+        &__mobileCloud {
             display: flex;
             margin: 3rem 0;
+            width: 80%;
         }
-    
-        &__description{
+
+        &__description {
             width: 90%;
         }
     }
-    .photocards{
-    flex-flow: row wrap;
-        &__left{
+
+    .photocards {
+        flex-flow: row wrap;
+
+        &__left {
             display: none;
         }
-        &__right{
+
+        &__right {
             display: none;
         }
-        &__mobileGraphics{
-        width: 80%;
-        max-height: 50%;
+
+        &__mobileGraphics {
+            width: 80%;
+            max-height: 50%;
             transition: $slowAnim;
             margin-bottom: 3rem;
-            display:block;
-            &:hover{
+            display: block;
+
+            &:hover {
                 filter: brightness(1.5);
             }
         }
     }
-    .adresses{
-    flex-wrap: wrap;
-        &__info{
+
+    .adresses {
+        flex-wrap: wrap;
+
+        &__info {
             width: 80%;
         }
-        &__map{
+
+        &__map {
             margin-top: 2rem;
             width: 80%;
         }
     }
-    .development{
+
+    .development {
         flex-wrap: wrap;
-        &__title{
-        text-align: center;
+
+        &__title {
+            text-align: center;
             width: 80%;
         }
-        &__description{
+
+        &__description {
             width: 90%;
         }
     }
-    .wrapper{
-        &__left{
-            & > h1,h2 {
+
+    .wrapper {
+        flex-wrap: wrap;
+        width: 100%;
+
+        &>img {
+            transform: scale(1);
+            margin: 1rem;
+        }
+
+        &__left {
+
+            &>h1,
+            h2 {
                 font-size: $tabMobH4Size;
             }
         }
     }
+}
 
+@keyframes mobileMenu {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
