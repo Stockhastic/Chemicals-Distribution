@@ -38,13 +38,13 @@ ul li {
 
 h1 {
   font-size: 4rem;
-  color: #087264;
+  color: #2d6d4a;
   font-family: "Jost-SemiBold", "Arial", "Helvetica", "sans-serif";
 }
 
 h2 {
   font-size: 3.2rem;
-  color: #087264;
+  color: #2d6d4a;
   font-family: "Jost-Medium", "Arial", "Helvetica", "sans-serif";
 }
 
@@ -93,7 +93,7 @@ body {
 }
 
 .btn_light {
-  background: linear-gradient(90deg, #17a884, #428862);
+  background: linear-gradient(90deg, #17a884, #087264);
   transition: 0.26s;
   border: 2px solid #17a884;
   position: relative;
@@ -106,7 +106,7 @@ body {
   transform: translateY(5px);
   color: #fff;
   background-clip: unset;
-  border: 2px solid #428862;
+  border: 2px solid #087264;
 }
 
 nav {
@@ -125,7 +125,7 @@ header {
 
 .header__logo {
   padding: 15px 30px;
-  background: linear-gradient(0deg, #17a884, #428862);
+  background: linear-gradient(0deg, #17a884, #087264);
 }
 .header__navigation {
   display: flex;
@@ -169,7 +169,7 @@ header {
 }
 
 .contactsLink {
-  background: linear-gradient(0deg, #17a884, #428862);
+  background: linear-gradient(0deg, #17a884, #087264);
   padding: 1rem 4rem;
   color: #fff;
   margin-left: 0;
@@ -212,7 +212,7 @@ header {
 .langSwitcher__languageMenu {
   display: none;
   padding: 1.5rem 2rem;
-  border: 2px solid #428862;
+  border: 2px solid #087264;
   border-radius: 20px;
   position: absolute;
   translate: -66% 30%;
@@ -227,7 +227,7 @@ header {
 .langSwitcher__languageLink > a {
   font-family: "Jost-Medium";
   font-size: 2.4rem;
-  color: #428862;
+  color: #087264;
 }
 .langSwitcher__languageLink > img {
   width: 3rem;
@@ -249,7 +249,7 @@ header {
   width: 80%;
   transform: scale(1);
   border-radius: 5px;
-  background-color: #428862;
+  background-color: #087264;
 }
 .burger::before, .burger::after {
   transition: 0.3s;
@@ -257,7 +257,7 @@ header {
   content: "";
   height: 5px;
   width: 80%;
-  background-color: #428862;
+  background-color: #087264;
   border-radius: 5px;
 }
 .burger::before {
@@ -314,7 +314,7 @@ main {
 }
 .advantages__card {
   transition: 0.3s;
-  background: linear-gradient(90deg, #17a884, #428862);
+  background: linear-gradient(90deg, #17a884, #087264);
 }
 .advantages__title {
   color: #fff;
@@ -440,7 +440,7 @@ main {
 
 .cloud_main {
   transition: 0.3s;
-  background-color: #428862;
+  background-color: #087264;
   margin-bottom: 5px;
 }
 .cloud_main:hover {
@@ -500,7 +500,7 @@ main {
 }
 .adresses__map {
   max-width: 695px;
-  border: 5px solid #428862;
+  border: 5px solid #087264;
   border-radius: 5px;
 }
 .adresses__map > iframe {
@@ -509,7 +509,7 @@ main {
 .adresses__title {
   font-weight: 400;
   text-align: end;
-  color: #428862;
+  color: #087264;
 }
 .adresses__description {
   text-align: end;
@@ -547,7 +547,7 @@ footer {
   align-content: center;
   width: 100%;
   height: 175px;
-  background: linear-gradient(90deg, #17a884, #428862);
+  background: linear-gradient(90deg, #17a884, #087264);
 }
 
 .wrapper {
@@ -814,7 +814,7 @@ footer {
     justify-content: space-between;
     position: fixed;
     overflow-y: auto;
-    background: linear-gradient(90deg, #17a884, #428862);
+    background: linear-gradient(90deg, #17a884, #087264);
     width: 100%;
     height: 100%;
     bottom: 0;
