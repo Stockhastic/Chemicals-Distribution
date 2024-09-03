@@ -225,6 +225,7 @@ header {
         display: inline-block;
         translate: -5px 25%;
         content: url("../media/graphics/png/navLinkPhone.png");
+        filter: hue-rotate(250deg) brightness(1.4);
     }
 
     &:hover {
@@ -244,6 +245,9 @@ header {
         display: flex;
         align-items: center;
         cursor: pointer;
+    }
+    &__arrow{
+        filter: hue-rotate(250deg) brightness(1.4);
     }
 
     &__languageMenu {
