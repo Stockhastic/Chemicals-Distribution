@@ -980,7 +980,7 @@ footer {
 
         &__linkMobile {
             font-family: "Jost-Medium";
-            font-size: $tabMobH1Size*1.5;
+            font-size: $tabMobH1Size*2;
             color: #fff;
 
             &::before {
@@ -988,7 +988,7 @@ footer {
                 position: absolute;
                 content: '';
                 width: 8px;
-                height: 46px;
+                height: 60px;
                 background-color: #fff;
                 translate: -25px 0;
             }
@@ -1016,11 +1016,23 @@ footer {
         right: 0;
     }
 
+    .navigationMobile__logo{
+        background-color: #fff;
+        position: absolute;
+        border-radius: 0 0 30px 0;
+        padding: 2rem 3rem;
+        top: 0rem;
+        left: 0rem;
+        width: 60%;
+    }
+
+
     .burger {
         // position: fixed;
         display: flex;
         margin-right: 3rem;
         // margin-top: 4rem;
+
     }
 
     main {
