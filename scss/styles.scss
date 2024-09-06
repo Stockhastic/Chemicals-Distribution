@@ -612,8 +612,21 @@ main {
         text-align: end;
         color: $secondColor;
     }
+    &__contacts{
+        & > a{
+            color: $secondColor;
+            transition: $slowAnim;
+            &:hover{
+                color: $accentColor;
+            }
+        }
+    }
+
 
     &__description {
+        display: block;
+        font-family: "Jost-Regular";
+        font-size: $header4Size;
         text-align: end;
         // margin-bottom: 58px;
         font-weight: 500;

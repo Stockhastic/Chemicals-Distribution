@@ -511,7 +511,17 @@ main {
   text-align: end;
   color: #087264;
 }
+.adresses__contacts > a {
+  color: #087264;
+  transition: 0.3s;
+}
+.adresses__contacts > a:hover {
+  color: #2797dd;
+}
 .adresses__description {
+  display: block;
+  font-family: "Jost-Regular";
+  font-size: 2.2rem;
   text-align: end;
   font-weight: 500;
 }
