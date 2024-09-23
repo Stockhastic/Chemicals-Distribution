@@ -151,7 +151,11 @@ header {
 .header__langSwitcher {
   display: flex;
   width: 60px;
-  height: 30px;
+  height: 70px;
+  cursor: pointer;
+}
+.header__langSwitcher:hover > ul {
+  display: block;
 }
 
 .colorHover:hover {
@@ -215,19 +219,24 @@ header {
   border: 2px solid #087264;
   border-radius: 20px;
   position: absolute;
-  translate: -66% 30%;
+  translate: -66% 55%;
   text-align: end;
   min-width: 140px;
+  background: linear-gradient(0deg, #17a884, #087264);
 }
 .langSwitcher__languageLink {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0.5rem 0;
+}
+.langSwitcher__languageLink:hover {
+  filter: drop-shadow(1px 1px 20px #fff);
 }
 .langSwitcher__languageLink > a {
   font-family: "Jost-Medium";
   font-size: 2.4rem;
-  color: #087264;
+  color: #fff;
 }
 .langSwitcher__languageLink > img {
   width: 3rem;

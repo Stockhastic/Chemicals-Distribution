@@ -15,7 +15,7 @@
         <nav>
             <ul class="header__navigation">
                 <li class="colorHover">
-                    <a href="#" class="header__link">Main</a>
+                    <a href="#" class="header__link" id="mainLink">Main</a>
                 </li>
                 <li class="colorHover">
                     <a href="#" class="header__link">Catalog</a>
@@ -28,25 +28,27 @@
                 <li><a href="#" class="header__linkMobile">Catalog</a></li>
                 <li><a href="#" class="header__linkMobile">Contacts</a></li>
                 <li><img src="media/graphics/vectors/logo-Glyph.svg" alt="mobileLogo" class="navigationMobile__logo"></li>
+
             </ul>
             <div class="header__langSwitcher">
+                <button class="langSwitcher__btn">
                     <img src="media/graphics/png/navLangSwitcherEng.png" alt="langSwitcherFlag"
                         class="langSwitcher__flag">
                     <img src="media/graphics/png/navLangSwitchera_arrowDown.png" alt="arrow" class="langSwitcher__arrow">
                 </button>
                 <ul class="langSwitcher__languageMenu">
                     <li class="langSwitcher__languageLink">
-                        <a href="?lang=en">English</a>
-                        <img src="/media/graphics/png/navLangSwitcherEng.png" alt="ENG">
+                        <a href="index.html">English</a>
+                        <img src="/media/graphics/png/navLangSwitcherEng.png" href="index.html" alt="ENG">
                     </li>
                     <li class="langSwitcher__languageLink">
-                        <a href="?lang=ru">Русский</a>
+                        <a href="index-ru.html">Русский</a>
                         <img src="/media/graphics/png/navLangSwitcherRus.png" alt="RUS">
                     </li>
-                    <li class="langSwitcher__languageLink">
+                    <!-- <li class="langSwitcher__languageLink">
                         <a href="?lang=ha">Հայերեն</a>
                         <img src="/media/graphics/png/navLangSwitcherArm.png" alt="HAY">
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </nav>
@@ -156,6 +158,18 @@
         </div>
     </footer>
     <script>
+        // function setLanguage(lang) {
+        //     const content = {
+        //         en: {
+        //             mainLink: "Main"
+        //         },
+        //         ru: {
+        //             mainLink: "Главная"
+        //         }
+        //     };
+            
+        //     document.getElementById('main-link').textContent = content[lang].mainLink;
+        // }
         document.querySelector('.burger').addEventListener('click', function () {
             this.classList.toggle('active');
             document.querySelector('nav').classList.toggle('visibleSwitcher');
