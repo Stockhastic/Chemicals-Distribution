@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="media/graphics/png/faviconWhite.png" type="image/x-icon">
-    <title>Chemicals Distribution | Main Page</title>
+    <title>Chemicals Distribution | Главная страница</title>
 </head>
 
 <body>
@@ -15,22 +15,23 @@
         <nav>
             <ul class="header__navigation">
                 <li class="colorHover">
-                    <a href="#" class="header__link">Main</a>
+                    <a href="#" class="header__link">Главная</a>
                 </li>
                 <li class="colorHover">
-                    <a href="#" class="header__link">Catalog</a>
+                    <a href="#" class="header__link">Каталог</a>
                 </li>
-                <li><a href="#" class="header__link contactsLink">Contacts</a></li>
+                <li><a href="#" class="header__link contactsLink">Контакты</a></li>
                 <li><a href="#" class="header__link phoneLink">+374 12 345678</a></li>
             </ul>
             <ul class="header__navigationMobile">
-                <li><a href="#" class="header__linkMobile">Main</a></li>
-                <li><a href="#" class="header__linkMobile">Catalog</a></li>
-                <li><a href="#" class="header__linkMobile">Contacts</a></li>
+                <li><a href="#" class="header__linkMobile">Главная</a></li>
+                <li><a href="#" class="header__linkMobile">Каталог</a></li>
+                <li><a href="#" class="header__linkMobile">Контакты</a></li>
                 <li><img src="media/graphics/vectors/logo-Glyph.svg" alt="mobileLogo" class="navigationMobile__logo"></li>
             </ul>
             <div class="header__langSwitcher">
-                    <img src="media/graphics/png/navLangSwitcherEng.png" alt="langSwitcherFlag"
+                <button class="langSwitcher__btn">
+                    <img src="media/graphics/png/navLangSwitcherRus.png" alt="langSwitcherFlag"
                         class="langSwitcher__flag">
                     <img src="media/graphics/png/navLangSwitchera_arrowDown.png" alt="arrow" class="langSwitcher__arrow">
                 </button>
@@ -55,31 +56,33 @@
         </div>
     </header>
     <main>
-        <h1>Industrial equipment in Armenia</h1>
+        <h1>Промышленное оборудование в Армении</h1>
         <article class="industrialEquipment">
             <img src="media/graphics/png/industrialEquipment.png" alt="industrial image" width="560px" height="420px">
             <div class="industrialEquipment__description">
-                <h2>Equipment supplies</h2>
-                <p><strong>Chemicals Distribution</strong> offers a wide range of industrial equipment, spare parts and consumables.</p>
-                <p>Our specialists provide service and technical support of the equipment, including installation, adjustment and other types of maintenance of the supplied equipment.</p>
-                <a href="#" class="btn btn_light">View Catalog</a>
+                <h2>Поставки оборудования</h2>
+                <p><strong>Chemicals Distribution</strong> предлагает широкий спектр промышленного оборудования,
+                    запасных частей и расходных материалов.</p>
+                <p>Специалисты нашей компании предоставляют сервисное обслуживание и техническую поддержку оборудования,
+                    включая произведение монтажа,
+                    настройку и прочие виды технического обслуживания поставленного оборудования.</p>
+                <a href="#" class="btn btn_light">Ознакомится с каталогом</a>
             </div>
         </article>
         <div class="divider"></div>
         <article class="advantages">
             <section class="advantages__card advantages_quality">
-                <h1 class="advantages__title">Quality </h1>
-                <p class="advantages__text">We supply only quality 
-                    equipment from leading 
-                    international companies</p>
+                <h1 class="advantages__title">Качество</h1>
+                <p class="advantages__text">Мы поставляем только качественное оборудование от ведущих международных
+                    компаний</p>
             </section>
             <section class="advantages__card advantages_maintenance">
-                <h1 class="advantages__title">Maintenance</h1>
-                <p class="advantages__text">All supplied equipment is technically supported</p>
+                <h1 class="advantages__title">Обслуживание</h1>
+                <p class="advantages__text">Все поставляемое оборудование имеет техническую поддержку</p>
             </section>
             <section class="advantages__card advantages_reliability">
-                <h1 class="advantages__title">Reliability</h1>
-                <p class="advantages__text">You get a warranty service for all delivered solutions</p>
+                <h1 class="advantages__title">Надежность</h1>
+                <p class="advantages__text">Вы получаете гарантийное обослуживание всеъ поставленных решений</p>
             </section>
             <!-- <img class="advantagesCards__quality" src="/media/graphics/png/qualityRU.png" alt="advCards-Quality"> -->
             <!-- <img class="advantagesCards__service" src="/media/graphics/png/serviceRU.png" alt="advCards-Service"> -->
@@ -87,45 +90,46 @@
         </article>
         <div class="divider"></div>
         <article class="solutions">
-            <h1 class="solutions__title">Unique and optimal solutions for your business</h1>
+            <h1 class="solutions__title">Уникальные и оптимальные решения для вашего бизнеса</h1>
             <div class="solutions__cloud">
-                <p class="solutions__food cloud_main">Food industry</p>
-                <p class="solutions__electroeq cloud_dark">Electrical equipment</p>
-                <p class="solutions__cosmetics cloud_main">Cosmetics</p>
-                <p class="solutions__pharma cloud_dark">Pharmaceuticals</p>
-                <p class="solutions__bevereges cloud_dark">Drinks</p>
-                <p class="solutions__electronics cloud_main">Electronics</p>
+                <p class="solutions__food cloud_main">Пищевая промышленность</p>
+                <p class="solutions__electroeq cloud_dark">Электрическое оборудование</p>
+                <p class="solutions__cosmetics cloud_main">Косметика</p>
+                <p class="solutions__pharma cloud_dark">Фармацевтика</p>
+                <p class="solutions__bevereges cloud_dark">Напитки</p>
+                <p class="solutions__electronics cloud_main">Электроника</p>
             </div>
-            <img src="media/graphics/png/mobileSoultions_en.png" alt="mobileSolutionsCloud" class="solutions__mobileCloud">
-            <h3 class="solutions__description">We are engaged in software development and implementation in manufacturing industries.
-                Food, bevereges, cosmetics and pharmaceuticals, electronics and electrical equipment, and others.
-            </h3>
+            <img src="media/graphics/png/mobileSoultions.png" alt="mobileSolutionsCloud" class="solutions__mobileCloud">
+            <h3 class="solutions__description">Занимаемся разработкой и внедрением программного обеспечения в
+                производственных отраслях.
+                Пищевая промышленность, напитки, косметика, фрамацевткика, электроника, электрическое оборудование, и
+                прочих.</h3>
         </article>
         <div class="divider"></div>
         <article class="photocards">
             <figure class="photocards__left">
                 <img class="photocards__cover" src="media/graphics/png/setUpProdLine.png" alt="setUpIndLine">
-                <h1 class="photocards__title">Setting up industrial lines</h1>
+                <h1 class="photocards__title">Настройка промышленных линий</h1>
             </figure>
             <figure class="photocards__right">
                 <img class="photocards__cover" src="media/graphics/png/techSupServ.png" alt="techSupServ">
-                <h1 class="photocards__title">Technical support and maintenance</h1>
+                <h1 class="photocards__title">Техническая поддержка и обслуживание</h1>
             </figure>
-            <img src="media/graphics/png/setUpProdLine_MOBILE_EN.png" alt="setUpProdLine_MOBILE"
+            <img src="media/graphics/png/setUpProdLine_MOBILE.png" alt="setUpProdLine_MOBILE"
                 class="photocards__mobileGraphics">
-            <img src="media/graphics/png/techSupServ_MOBILE_EN.png" alt="techSupServ_MOBILE"
+            <img src="media/graphics/png/techSupServ_MOBILE.png" alt="techSupServ_MOBILE"
                 class="photocards__mobileGraphics">
         </article>
         <div class="divider"></div>
         <article class="adresses">
             <section class="adresses__info">
                 <div class="adresses__adress">
-                    <h2 class="adresses__title">Address</h2>
-                    <h4 class="adresses__description">Armenia, Yerevan, dist. Shengavit, Yeghishe Tadevosyan 19/20</h4>
+                    <h2 class="adresses__title">Адрес</h2>
+                    <h4 class="adresses__description">Армения, Ереван, р-н Шенгавит, ул. Егише Тадевосяна 19/20</h4>
                 </div>
                 <div class="adresses__contacts">
-                    <h2 class="adresses__title">Contacts</h2>
-                    <!-- <a href="tel:+37412345678" class="adresses__description"></a> -->
+                    <h2 class="adresses__title">Контакты</h2>
+                    <a href="tel:+37412345678" class="adresses__description">Телефон: +374 12 345678</a>
                     <a href="mailto:info@chemicalsdistribution.am" class="adresses__description">Email: info@chemicalsdistribuion.am</a>
                 </div>
             </section>
@@ -137,10 +141,11 @@
         </article>
         <div class="divider"></div>
         <article class="development">
-            <h1 class="development__title">The site is under development</h1>
+            <h1 class="development__title">Сайт находится в разработке</h1>
             <section class="development__description">
-                <p>We are cuttently in the process of developing and filling the website</p>
-                <p>The planned time of development completion is the - <span class="development__span">End of 2024</span>
+                <p>В данный момент мы занимаемся разработкой и наполнением сайта</p>
+                <p>
+                    Планируемое время окончания раработки - <span class="development__span">конец 2024 года</span>
                 </p>
             </section>
         </article>
