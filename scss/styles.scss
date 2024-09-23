@@ -1003,6 +1003,7 @@ footer {
             margin: 0 5rem;
             flex-direction: column;
             align-self: center;
+
         }
 
         &__linkMobile {
@@ -1043,6 +1044,7 @@ footer {
         right: 0;
     }
 
+    
     .navigationMobile__logo{
         background-color: #fff;
         position: absolute;
@@ -1052,7 +1054,11 @@ footer {
         left: 0rem;
         width: 60%;
     }
-
+    .navigationMobile__switcher{
+        text-align: center;
+        margin-top: 5rem;
+        color: transparent;
+    }
 
     .burger {
         // position: fixed;

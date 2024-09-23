@@ -851,6 +851,11 @@ footer {
     left: 0rem;
     width: 60%;
   }
+  .navigationMobile__switcher {
+    text-align: center;
+    margin-top: 5rem;
+    color: transparent;
+  }
   .burger {
     display: flex;
     margin-right: 3rem;
