@@ -860,6 +860,12 @@ footer {
     display: flex;
     margin-right: 3rem;
   }
+  .mobLangFlex {
+    display: flex;
+  }
+  .mobLangFlex > a {
+    margin-right: 3rem;
+  }
   main {
     width: 100%;
     display: flex;

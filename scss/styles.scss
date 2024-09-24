@@ -1065,7 +1065,12 @@ footer {
         display: flex;
         margin-right: 3rem;
         // margin-top: 4rem;
-
+    }
+    .mobLangFlex {
+        display: flex;
+        & > a {
+            margin-right: 3rem;
+        }
     }
 
     main {
