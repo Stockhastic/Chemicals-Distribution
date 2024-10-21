@@ -488,14 +488,14 @@ main {
   height: 335px;
 }
 .photocards__left > h1 {
-  translate: 3% -350%;
+  translate: 17% -350%;
 }
 .photocards__right {
   width: 695px;
   height: 335px;
 }
 .photocards__right > h1 {
-  translate: 17% -350%;
+  translate: 3% -350%;
 }
 
 .adresses {
