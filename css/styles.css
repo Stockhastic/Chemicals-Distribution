@@ -488,7 +488,7 @@ main {
   height: 335px;
 }
 .photocards__left > h1 {
-  translate: 40% -350%;
+  translate: 3% -350%;
 }
 .photocards__right {
   width: 695px;
