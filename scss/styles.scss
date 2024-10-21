@@ -579,23 +579,29 @@ main {
     }
 
     &__left {
+        display: flex;
         width: 695px;
         height: 335px;
+        justify-content: center;
+        align-items: center;
 
-        &>h1 {
-            // outline: 2px red solid;
-            translate: 17% -350%;
-        }
+        // &>h1 {
+        //     // outline: 2px red solid;
+        //     // translate: 16% -350%;
+        // }
     }
 
     &__right {
+        display: flex;
         width: 695px;
         height: 335px;
+        justify-content: center;
+        align-items: center;
 
-        &>h1 {
-            // outline: 2px red solid;
-            translate: 3% -350%;
-        }
+        // &>h1 {
+        //     // outline: 2px red solid;
+        //     translate: 4% -350%;
+        // }
     }
 }
 

@@ -484,18 +484,18 @@ main {
   filter: brightness(0.8);
 }
 .photocards__left {
+  display: flex;
   width: 695px;
   height: 335px;
-}
-.photocards__left > h1 {
-  translate: 17% -350%;
+  justify-content: center;
+  align-items: center;
 }
 .photocards__right {
+  display: flex;
   width: 695px;
   height: 335px;
-}
-.photocards__right > h1 {
-  translate: 3% -350%;
+  justify-content: center;
+  align-items: center;
 }
 
 .adresses {
